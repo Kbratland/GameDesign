@@ -17,7 +17,7 @@ public class DialougeBase : MonoBehaviour
         
     }
     void Option1 (){
-
+        
     }
     void Option2(){
 
