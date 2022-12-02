@@ -36,8 +36,8 @@ public class DialogueBase : MonoBehaviour
     }
     public void Option4(){
         //bad with good trust
-        aI_Manager.OpinionUp(weightOpinion);
-        aI_Manager.TrustDown(weightTrust);
+        aI_Manager.OpinionDown(weightOpinion);
+        aI_Manager.TrustUp(weightTrust);
     }
     public void NeutralOption(){
 

@@ -18,19 +18,19 @@ public class AI_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TrustScore.text = characterTrust;
-        OpinionScore.text = characterOpinion;
+        TrustScore.text = characterTrust.ToString();
+        OpinionScore.text = characterOpinion.ToString();
     }
     public void TrustUp(int trust){
         characterTrust += trust;
     }
     public void TrustDown(int trust){
-        characterTrust += trust;
+        characterTrust -= trust;
     }
     public void OpinionUp(int Opinion){
         characterOpinion += Opinion;
     }
     public void OpinionDown(int Opinion){
-        characterOpinion += Opinion;
+        characterOpinion -= Opinion;
     }
 }
