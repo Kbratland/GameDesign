@@ -20,4 +20,3 @@ RaycastHit hitdata;
         
     }
 }
-2
