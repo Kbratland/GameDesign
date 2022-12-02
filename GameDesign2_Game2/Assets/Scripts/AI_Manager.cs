@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class AI_Manager : MonoBehaviour
 {
+    public TMP_Text TrustScore;
+    public TMP_Text OpinionScore;
     int characterOpinion = 0;
     int characterTrust = 0;
     // Start is called before the first frame update
@@ -15,18 +18,19 @@ public class AI_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        TrustScore.text = characterTrust;
+        OpinionScore.text = characterOpinion;
     }
-    public void TrustUp(){
-
+    public void TrustUp(int trust){
+        characterTrust += trust;
     }
-    public void TrustDown(){
-
+    public void TrustDown(int trust){
+        characterTrust += trust;
     }
-    public void OpinionUp(){
-
+    public void OpinionUp(int Opinion){
+        characterOpinion += Opinion;
     }
-    public void OpinionDown(){
-
+    public void OpinionDown(int Opinion){
+        characterOpinion += Opinion;
     }
 }
