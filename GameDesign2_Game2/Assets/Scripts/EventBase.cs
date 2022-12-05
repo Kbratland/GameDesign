@@ -5,7 +5,10 @@ using UnityEngine;
 public class EventBase : MonoBehaviour
 {
 Ray ray;
-RaycastHit hitdata;
+RaycastHit hitData;
+float hitDistance;
+Vector3 hitPosition;
+string tag;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +18,12 @@ RaycastHit hitdata;
     // Update is called once per frame
     void Update()
     {
-        Ray ray = new Ray(transform.position, transform.forward);
-        Vector3 hitPosition = hitData.point;
-        
+        if(Physics.Raycast(ray,out hitData)){
+
+        }
+        ray = Camera.main.ViewportPointToRay(new Vector3 (0.5f, 0.5f, 0));
+        hitPosition = hitData.point;
+        hitDistance = hitData.distance;
+        Debug.Log(hitData.collider.gameObject.tag);
     }
 }
