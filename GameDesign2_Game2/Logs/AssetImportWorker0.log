@@ -990,3 +990,11 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 257828.392053 seconds.
+  path: Assets/Scripts/EventBase.cs
+  artifactKey: Guid(7342d7ab673304fc6876014be03251c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EventBase.cs using Guid(7342d7ab673304fc6876014be03251c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22987ec9cc4da7b030315a5001d53542') in 0.007081 seconds 
+  Import took 0.011431 seconds .
+
